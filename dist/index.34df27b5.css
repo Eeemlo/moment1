@@ -114,4 +114,9 @@ footer {
   display: flex;
 }
 
+picture img {
+  border: 10px solid #ff2ca7;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=index.34df27b5.css.map */

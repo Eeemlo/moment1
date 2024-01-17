@@ -116,3 +116,8 @@ footer {
     padding: 0 5em;
     color: #fff;
 }
+
+picture img {
+    border-radius: 50%;
+    border: 10px solid #ff2ca7;
+}
