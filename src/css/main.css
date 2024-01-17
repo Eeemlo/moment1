@@ -1,14 +1,19 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 nav {
     display: flex;
-    min-height: 3em;
+    min-height: 3.4em;
     max-height: 4em;
     height: 100%;
-    background-color: #f77d31;
+    background-image: linear-gradient(to bottom right, #9800c6, #ff2ca7);
     align-items: center;
     justify-content: center;
 }
@@ -17,6 +22,15 @@ nav {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 2em;
-    padding: 1em 2em;
 }  
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.1em 2em;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #9800c6;
+}
