@@ -1,0 +1,22 @@
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    min-height: 3em;
+    max-height: 4em;
+    height: 100%;
+    background-color: #f77d31;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 2em;
+    padding: 1em 2em;
+}  
