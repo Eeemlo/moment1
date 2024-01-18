@@ -40,6 +40,11 @@ h1 {
     letter-spacing: 0.5;
 }
 
+.h1center {
+    display: flex;
+    justify-content: center;
+}
+
 h2 {
 margin: 1.5em 0 0.5em;
 letter-spacing: 0.5
@@ -58,7 +63,8 @@ p {
 
 .hero-img img {
     max-width: 60em;
-    min-width: 40em;
+    min-width: 20em;
+    min-height: 30em;
     position: absolute;
     margin: 8em 1em 1em 30%;
     z-index: -1;
@@ -66,6 +72,7 @@ p {
 
 .info1 {
     max-width: 30em;
+    min-width: 30em;
     height: 100%;
     background-image: linear-gradient(to bottom right, #cc0d7c, #9800c6);
     border: 10px solid #ff2ca7;
@@ -107,6 +114,55 @@ li {
     letter-spacing: 0.4;
 }
 
+picture img {
+    border-radius: 50%;
+    border: 7pt solid #ff2ca7;
+}
+
+
+.foto-container {
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "bild1 ."
+      "bild1 bild2"
+      "bild3 bild2"
+      "bild3 bild4"
+      "bild5 bild4"
+      "bild5 ."; 
+      max-width: 1200px;
+      margin: 0 auto;
+      background-image: url("../bilder/bakgrund_bilder.svg");
+
+  }
+  .bild1 { 
+    grid-area: bild1; 
+    margin: 2em auto;
+}
+  .bild2 { 
+    grid-area: bild2;
+    margin: 4em auto;
+ }
+  .bild3 { 
+    grid-area: bild3;
+    margin: 4em auto;
+ }
+  .bild4 { 
+    grid-area: bild4;
+    margin: 4em auto;
+}
+  .bild5 { 
+    grid-area: bild5;
+    margin: 2em auto;
+ }
+
+ .foto-container picture img {
+    width: 100%;
+ }
+
 footer {
     display: flex;
     min-height: 5em;
@@ -117,7 +173,3 @@ footer {
     color: #fff;
 }
 
-picture img {
-    border-radius: 50%;
-    border: 10px solid #ff2ca7;
-}

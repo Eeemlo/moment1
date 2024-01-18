@@ -38,6 +38,11 @@ h1 {
   margin: 1em 0;
 }
 
+.h1center {
+  justify-content: center;
+  display: flex;
+}
+
 h2 {
   letter-spacing: .5px;
   margin: 1.5em 0 .5em;
@@ -56,8 +61,9 @@ p {
 
 .hero-img img {
   z-index: -1;
-  min-width: 40em;
+  min-width: 20em;
   max-width: 60em;
+  min-height: 30em;
   margin: 8em 1em 1em 30%;
   position: absolute;
 }
@@ -67,6 +73,7 @@ p {
   background-image: linear-gradient(to bottom right, #cc0d7c, #9800c6);
   border: 10px solid #ff2ca7;
   border-radius: 50%;
+  min-width: 30em;
   max-width: 30em;
   height: 100%;
   max-height: 30em;
@@ -104,6 +111,55 @@ li {
   margin: 1em 0;
 }
 
+picture img {
+  border: 7pt solid #ff2ca7;
+  border-radius: 50%;
+}
+
+.foto-container {
+  background-image: url("bakgrund_bilder.94d9d94c.svg");
+  grid-template: "bild1 ." 1fr
+                 "bild1 bild2" 1fr
+                 "bild3 bild2" 1fr
+                 "bild3 bild4" 1fr
+                 "bild5 bild4" 1fr
+                 "bild5 ." 1fr
+                 / 1fr 1fr;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.bild1 {
+  grid-area: bild1;
+  margin: 2em auto;
+}
+
+.bild2 {
+  grid-area: bild2;
+  margin: 4em auto;
+}
+
+.bild3 {
+  grid-area: bild3;
+  margin: 4em auto;
+}
+
+.bild4 {
+  grid-area: bild4;
+  margin: 4em auto;
+}
+
+.bild5 {
+  grid-area: bild5;
+  margin: 2em auto;
+}
+
+.foto-container picture img {
+  width: 100%;
+}
+
 footer {
   color: #fff;
   background-image: linear-gradient(to bottom right, #9800c6, #ff2ca7);
@@ -112,11 +168,6 @@ footer {
   min-height: 5em;
   padding: 0 5em;
   display: flex;
-}
-
-picture img {
-  border: 10px solid #ff2ca7;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=index.34df27b5.css.map */
