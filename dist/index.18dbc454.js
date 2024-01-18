@@ -579,6 +579,15 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
+"use strict";
+window.onload = function() {
+    const hamburgerEl = document.querySelector(".hamburger");
+    const mobileNavEl = document.querySelector(".mobile_nav");
+    hamburgerEl.addEventListener("click", function() {
+        hamburgerEl.classList.toggle("active");
+        mobileNavEl.classList.toggle("active");
+    });
+};
 
 },{}]},["iqNlW","1SICI"], "1SICI", "parcelRequire2f92")
 
