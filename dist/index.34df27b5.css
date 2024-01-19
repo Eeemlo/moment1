@@ -50,7 +50,10 @@ h1 {
 }
 
 .h1center {
+  color: #cc0d7c;
+  text-transform: uppercase;
   justify-content: center;
+  font-size: 3em;
   display: flex;
 }
 
@@ -70,6 +73,10 @@ p {
   display: flex;
 }
 
+.pil_small {
+  display: none;
+}
+
 .hero-img img {
   z-index: -1;
   min-width: 20em;
@@ -84,7 +91,7 @@ p {
   background-image: linear-gradient(to bottom right, #cc0d7c, #9800c6);
   border: 10px solid #ff2ca7;
   border-radius: 50%;
-  min-width: 30em;
+  min-width: 19em;
   max-width: 30em;
   height: 100%;
   max-height: 30em;
@@ -129,7 +136,7 @@ li {
   margin: 1em 0;
 }
 
-picture img {
+.bild img {
   border: 7pt solid #ff2ca7;
   border-radius: 50%;
 }
@@ -176,6 +183,21 @@ picture img {
 
 .foto-container picture img {
   width: 100%;
+}
+
+.flex-container {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+  display: flex;
+}
+
+.process-container {
+  background-color: #fff;
+  border: 7px solid #ff2ca7;
+  width: 100%;
+  max-width: 700px;
+  padding: 1em;
 }
 
 footer {
@@ -255,9 +277,90 @@ footer {
   }
 }
 
+@media screen and (width <= 880px) {
+  .hero-img {
+    justify-content: center;
+    height: 42em;
+  }
+
+  .hero-img .pil_large {
+    display: none;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 60%;
+    margin: 180px 0 0;
+    display: flex;
+    position: absolute;
+  }
+
+  .example img {
+    width: 100%;
+    max-width: 512px;
+    margin-top: 1em;
+  }
+}
+
 @media screen and (width <= 600px) {
   .large_nav {
     display: none;
+  }
+
+  footer {
+    padding: 0 1em;
+  }
+
+  .info2 {
+    border: 6px solid #ff2ca7;
+    padding: 1em .5em 5em;
+  }
+
+  .info1 {
+    border: 6px solid #ff2ca7;
+    width: 24em;
+    height: 24em;
+    margin: 2em 2%;
+    padding: 7em 2em;
+  }
+
+  .hero-img {
+    height: 35em;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 30%;
+    margin: 80px 0 0;
+  }
+
+  .bild img {
+    border: 4pt solid #ff2ca7;
+  }
+
+  .h1center {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (width <= 450px) {
+  .info1 {
+    width: 21em;
+    height: 21em;
+    margin: 2em 2%;
+    padding: 4em 1em;
+    font-size: .8em;
+  }
+
+  .hero-img {
+    height: 30em;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 10%;
+    max-height: 30px;
+    margin: 0;
   }
 }
 

@@ -52,6 +52,10 @@ h1 {
 .h1center {
     display: flex;
     justify-content: center;
+    color:#cc0d7c;
+    text-transform: uppercase;
+    font-size: 3em;
+
 }
 
 h2 {
@@ -70,6 +74,10 @@ p {
     max-width: 1500px;
 }
 
+.pil_small {
+    display: none;
+}
+
 .hero-img img {
     max-width: 60em;
     min-width: 20em;
@@ -81,7 +89,7 @@ p {
 
 .info1 {
     max-width: 30em;
-    min-width: 30em;
+    min-width: 19em;
     height: 100%;
     background-image: linear-gradient(to bottom right, #cc0d7c, #9800c6);
     border: 10px solid #ff2ca7;
@@ -132,7 +140,7 @@ li {
     letter-spacing: 0.4;
 }
 
-picture img {
+.bild img {
     border-radius: 50%;
     border: 7pt solid #ff2ca7;
 }
@@ -179,6 +187,21 @@ picture img {
 
  .foto-container picture img {
     width: 100%;
+ }
+
+ .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+ }
+
+ .process-container {
+    max-width: 700px;
+    width: 100%;
+    border: 7px solid #ff2ca7;
+    background-color: #fff;
+    padding: 1em;
  }
 
 footer {
@@ -260,8 +283,95 @@ transform: rotate(-45deg) translate(-9px, 6px);
     }
 
 
+    @media screen and (max-width: 880px){
+
+        .hero-img {
+            justify-content: center;
+            height: 42em;
+        }
+
+        .hero-img .pil_large {
+            display: none;
+         }
+
+         .hero-img img {
+            height: 60%;
+            width: 100%;
+            display: flex;
+            margin: 180px 0 0 0;
+            position: absolute;
+        }
+
+        .example img {
+            max-width: 512px;
+            width: 100%;
+            margin-top: 1em;
+        }
+    }
+
 @media screen and (max-width: 600px){
     .large_nav {
         display: none;
     }
+
+    footer {
+        padding: 0 1em;
+    }
+
+    .info2 {
+        padding: 1em 0.5em 5em;
+        border: 6px solid #ff2ca7;
+    }
+
+    .info1 {
+        width: 24em;
+        border: 6px solid #ff2ca7;
+        height: 24em;
+        margin: 2em 2%;
+        padding: 7em 2em;
+    }
+
+    .hero-img {
+        height: 35em;
+    }
+
+    .hero-img img {
+        height: 30%;
+        width: 100%;
+        margin: 80px 0 0 0;
+    }
+
+    .bild img {
+        border: 4pt solid #ff2ca7;
+    }
+
+    .h1center {
+        font-size: 1.8em;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 450px){
+    .info1 {
+        width: 21em;
+        height: 21em;
+        margin: 2em 2%;
+        padding: 4em 1em;
+        font-size: 0.8em;
+    }
+
+    .hero-img {
+        height: 30em;
+    }
+
+    .hero-img img {
+        max-height: 30px;
+        height: 10%;
+        width: 100%;
+        margin: 0px 0 0 0;
+    }
+
+
 }
