@@ -8,6 +8,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+  padding: 0 1em;
+}
+
 nav {
   background-image: linear-gradient(to bottom right, #9800c6, #ff2ca7);
   justify-content: center;
