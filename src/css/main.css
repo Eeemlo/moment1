@@ -12,14 +12,15 @@ main {
     padding: 0 1em;
 }
 
+
 nav {
     display: flex;
     min-height: 3.4em;
     max-height: 4em;
     height: 100%;
-    background-image: linear-gradient(to bottom right, #9800c6, #ff2ca7);
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom right, #9800c6, #ff2ca7);
 }
 
 .logo {
