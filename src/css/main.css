@@ -199,6 +199,7 @@ footer {
     border: none;
     margin: -45px 1em 0;
     z-index: 10;
+    float: right;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {

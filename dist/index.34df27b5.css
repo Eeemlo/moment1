@@ -188,6 +188,7 @@ footer {
   cursor: pointer;
   appearance: none;
   z-index: 10;
+  float: right;
   background: none;
   border: none;
   outline: none;
