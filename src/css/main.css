@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 h1 {
     margin: 1em 0;
-    letter-spacing: 0.5;
+    letter-spacing: 0.05em;
 }
 
 .h1center {
@@ -61,12 +61,12 @@ h1 {
 
 h2 {
 margin: 1.5em 0 0.5em;
-letter-spacing: 0.5
+letter-spacing: 0.04em;
 }
 
 p {
     line-height: 1.5;
-    letter-spacing: 0.4;
+    letter-spacing: 0.02em;
 }
 
 .hero-img {
@@ -106,7 +106,7 @@ p {
     color: #fff;
     font-size: 1em;
     line-height: 1.5;
-    letter-spacing: 0.5;
+    letter-spacing: 0.025em;
 }
 
 @media screen and (max-width: 1092px) {
@@ -138,7 +138,7 @@ ul {
 
 li {
     margin: 1em 0;
-    letter-spacing: 0.4;
+    letter-spacing: 0.03em;
 }
 
 .bild img {
